@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>time</title>
+        
+    </head>
+    <body>
+        <h1>Current Time</h1>
+        <p id="time"></p>
+    </body>
+        <script>
+            function updateTime() {
+                let a = new Date();
+                console.log(a);
+                document.getElementById('time').textContent = a.toLocaleTimeString();
+            }
+
+            setInterval(updateTime, 1000);
+            updateTime(); // Initial call to display time immediately
+        </script>
+</html>
+       
